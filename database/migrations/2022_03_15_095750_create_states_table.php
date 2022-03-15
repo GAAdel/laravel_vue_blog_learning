@@ -15,10 +15,11 @@ class CreateStatesTable extends Migration
     {
         Schema::create('states', function (Blueprint $table) {
             $table->id();
-            $table->integer("likes")->unique();
-            $table->integer("views");
-            $table->unsignedBigInteger("article_id");
-            // $table->timestamps();
+            $table->integer('likes');
+            $table->integer('views');
+//            $table->unsignedBigInteger('article_id');
+            $table->foreignId('article_id')->constrained()->onDelete('cascade');
+//            $table->timestamps();
         });
     }
 

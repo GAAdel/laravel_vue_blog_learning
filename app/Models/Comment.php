@@ -13,6 +13,6 @@ class Comment extends Model
     protected $fillable = ["subject", "body", "article_id"];
 
     public function article() {
-        return $this->belongsToOne(Article::class);
+        return $this->belongsTo(Article::class);
     }
 }
