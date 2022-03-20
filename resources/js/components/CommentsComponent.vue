@@ -20,7 +20,7 @@
         <div class="alert alert-success" role="alert" v-else>
             Комментарий успешно отправлен!
         </div>
-        <div class="toast-container pb-2 mt-5 mx-auto" style="min-width: 100%;" v-for="comment in comments" :key="comment.id">
+        <div class="toast-container pb-2 mt-5 mx-auto" style="min-width: 100%;" v-for="comment in comments">
             <div class="toast showing" style="min-width: 100%;">
                 <div class="toast-header">
                     <img src="https://via.placeholder.com/50/5F113B/FFFFFF/?text=User" class="rounded me-2" alt="...">
@@ -36,6 +36,7 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {
@@ -70,4 +71,7 @@ export default {
 </script>
 
 <style scoped>
+
+
+
 </style>

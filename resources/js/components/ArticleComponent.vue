@@ -4,7 +4,7 @@
     <img :src="article.img" class="border rounded mx-auto d-block" alt="...">
     <h5 class="mt-5">{{article.title}}</h5>
     <p>
-        <span class="tag" v-for="(tag,index) in article.tags" :key="tag.label">
+        <span class="tag" v-for="(tag,index) in article.tags">
             <span v-if="tagsLen == (index+1)">{{tag.label}}</span>
             <span v-else>{{tag.label}} | </span>
         </span>
@@ -21,6 +21,7 @@
 
 <script>
 import { mapState }  from 'vuex'
+
 export default {
     computed: mapState({
         // article: 'article',
@@ -34,4 +35,6 @@ export default {
 </script>
 
 <style scoped>
+
+
 </style>

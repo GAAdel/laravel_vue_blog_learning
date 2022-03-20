@@ -4,6 +4,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
+
 export default {
     computed: {
         isLike(){
@@ -26,7 +27,9 @@ export default {
 </script>
 
 <style scoped>
+
 .likesButton {
     cursor: pointer;
 }
+
 </style>
